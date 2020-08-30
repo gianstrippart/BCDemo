@@ -62,7 +62,7 @@ It can also be done manually by using something like:
             $data[$i] = strtoupper($data[$i]);
         }
     }
-    $shortlink = 'https://shr.tn/'.Str::random(6);
+    $shortlink = 'https://shr.tn/'.$data;
     // Old code //
 ```
 
