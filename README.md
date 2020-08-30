@@ -26,7 +26,7 @@ NOTE: As this app is supposed to work as a server for the following plugin too: 
 
 ## Algorithm
 
-To generate the short URL's the app simply, takes the Long URL, saves it to the database and then generates the Short URL, setting arbitrarily the first part of the address to https://shr.tn/ and then adding a random 6 characters long string to it, using the following logic:
+To generate a Short URL the app simply takes a Long URL, saves it to the database and then generates the Short URL, setting arbitrarily the first part of the address to https://shr.tn/ and then adding a random 6 characters long string to it, and then saving it to the database too, among other data, using the following logic:
 
 ```php
     $link->name = session('guestUser');
